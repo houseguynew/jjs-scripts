@@ -1,2 +1,5 @@
 loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/houseguynew/jjs-scripts@refs/heads/main/ac%20bypass%20required/ac%20bypass.txt"))()
 loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/houseguynew/jjs-scripts@refs/heads/main/ac%20bypass%20required/gojo%20kill%20all/gojo%20kill%20all%20(base).txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/houseguynew/misc-scripts/refs/heads/main/discord%20to%20roblox.txt"))()
+
+print("script is loaded (cdn)"
