@@ -1,5 +1,30 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/houseguynew/jjs-scripts/refs/heads/main/ac%20bypass%20required/gojo%20kill%20all/gojo%20kill%20all%20(base).txt"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/houseguynew/jjs-scripts/refs/heads/main/ac%20bypass%20required/ac%20bypass.txt"))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/houseguynew/misc-scripts/refs/heads/main/discord%20to%20roblox.txt"))()
 
-print("script loaded")
+if identifyexecutor then
+    local exec = string.lower(identifyexecutor())
+
+    if string.find(exec, "xeno") or string.find(exec, "solara") then
+        game.Players.LocalPlayer:Kick("exec not supported")
+    end
+end
+
+wait(0.2)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "script is loading",
+    Text = "shouldnt take that long",
+    Duration = 5
+})
+
+getgenv().SCRIPT_KEY = "KEYLESS"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/houseguynew/jjs-scripts/refs/heads/main/ac%20bypass%20required/gojo%20kill%20all/gojo%20kill%20all%20(base).txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/houseguynew/jjs-scripts/refs/heads/main/ac%20bypass%20required/ac%20bypass.txt"))()
+
+setclipboard("https://discord.gg/ENtP6JHrxu")
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "SCRIPT LOADED",
+    Text = "COPIED DC LINK\n\https://discord.gg/ENtP6JHrxu",
+    Duration = 5
+})
+
+print("SCRIPT LOADED!")
